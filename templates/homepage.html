@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+                .error { color: red; }
+                .error { display: inline-block; }
+        </style>
+</head>
+    <body>
+        <form action="/submit" method="post">
+            <label> Enter username
+                <input type="text" name="username" value="{{username}}"/>
+            </label>
+            <p class="error"> {{username_error_1}}</p>
+            <p class="error"> {{username_error_2}}</p>
+            <p class="error"> {{username_error_3}}</p>
+            <p class="error"> {{username_error_4}}</p>
+            <br>
+            <label > Enter email(optional)
+                <input type="text" name="email" value="{{email}}"/>
+            </label>
+            <p class="error"> {{email_error_1}} </p>
+            <p class="error"> {{email_error_2}} </p>
+            <p class="error"> {{email_error_3}} </p>
+            <p class="error"> {{email_error_4}} </p>
+            
+            <br>
+            <label> Enter password
+                <input type="password" name="password" value="{{password}}" />
+            </label>
+            <p class="error"> {{password_blank}}</p>
+            <br>
+            <label> Re-enter Password
+                <input type="password" name="password_confirmation" value="{{password_confirmation}}"/>
+            </label>  
+            <p class="error"> {{password_error}}</p>
+            <p class="error"> {{password_confirmation_blank}}</p>
+            <br>
+            <input type="submit" value="Submit" />  
+        </form>
+    </body>
+</html>
